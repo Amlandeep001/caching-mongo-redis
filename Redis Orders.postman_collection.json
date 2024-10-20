@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "25f4c740-ce49-4bb4-a09c-0e62cd591470",
+		"_postman_id": "eba6a3d8-e54c-40ee-8737-fdd1661059d8",
 		"name": "Redis Orders",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "37416421"
+		"_exporter_id": "21428120"
 	},
 	"item": [
 		{
@@ -12,12 +12,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/order/all",
+					"raw": "http://localhost:8267/order/all",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8267",
 					"path": [
 						"order",
 						"all"
@@ -32,12 +32,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/order/66bc63041bd07b277a46eac1",
+					"raw": "http://localhost:8267/order/66bc63041bd07b277a46eac1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8267",
 					"path": [
 						"order",
 						"66bc63041bd07b277a46eac1"
@@ -61,12 +61,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/order/create",
+					"raw": "http://localhost:8267/order/create",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8267",
 					"path": [
 						"order",
 						"create"
@@ -90,12 +90,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/order/update/66bc63041bd07b277a46eac1",
+					"raw": "http://localhost:8267/order/update/66bc63041bd07b277a46eac1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8267",
 					"path": [
 						"order",
 						"update",
@@ -120,12 +120,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/order/delete/66bc5daeadafc3699332e23d",
+					"raw": "http://localhost:8267/order/delete/66bc5daeadafc3699332e23d",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8267",
 					"path": [
 						"order",
 						"delete",
