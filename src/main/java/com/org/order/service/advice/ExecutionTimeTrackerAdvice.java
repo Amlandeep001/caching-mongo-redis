@@ -12,8 +12,8 @@ import lombok.extern.log4j.Log4j2;
 
 /**
  * Advice for order service application to capture the duration for @TrackExecutionTime annotated method calls
+ * 
  * @author Amlan
- *
  */
 @Aspect
 @Component
@@ -23,8 +23,8 @@ public class ExecutionTimeTrackerAdvice
 	@Around("@annotation(TrackExecutionTime)")
 	public Object trackTime(ProceedingJoinPoint proceedingJoinPoint) throws Throwable
 	{
-		String methodName = proceedingJoinPoint.getSignature().getName();
-		String className = proceedingJoinPoint.getTarget().getClass().toString();
+		final String methodName = proceedingJoinPoint.getSignature().getName();
+		final String className = proceedingJoinPoint.getTarget().getClass().toString();
 
 		final Instant startTime = Instant.now();
 		log.info("Before method invoked: {} from className: {} where current time :: {}", methodName, className, startTime);
